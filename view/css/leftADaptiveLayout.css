@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.box {
+  height: 400px;
+}
+.left {
+  height: 100%;
+  background-color: #fecb9d;
+  margin-right: 100px;
+}
+.right {
+  width: 100px;
+  height: 100%;
+  float: right;
+  background-color: #11f2ff;
+}
