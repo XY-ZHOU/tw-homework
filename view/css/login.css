@@ -1,29 +1,33 @@
 .loginBox{
-    width: 400px;
-    height:200px;
-    background: #bcfcff;
-    border: 1px solid #b3b3b3;
-    margin: 100px auto;
-    text-align: center;
+  width: 400px;
+  height:200px;
+  background: #bcfcff;
+  border: 1px solid #b3b3b3;
+  margin: 100px auto;
+  text-align: center;
 }
+
 .loginTitle{
-    font-size:16px;
-    margin:10px;
+  font-size:16px;
+  margin:10px;
 }
-.loginBox p{
-    padding: 5px;
+
+.loginBox div{
+  padding: 5px;
 }
-.loginBox p>span{
-    display: inline-block;
-    width: 70px;
-    text-align: right;
-    margin-right: 10px;
+
+.loginBox label{
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+  margin-right: 10px;
 }
-.loginBox p>input{
-    height: 20px;
+
+.loginBox div>input{
+  height: 20px;
 }
-.tip{
-    display: none;
-    text-align: left;
-    color: crimson;
+
+.tip_style{
+  text-align:left;
+  color: crimson;
 }
