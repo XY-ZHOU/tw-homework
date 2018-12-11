@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js" defer>
+    </script>
   </head>
   <body>
-    <div class="loginTitle">用户登录</div>
-      <p><span>用户名:</span><input type="txt" placeholder="请输入用户名" class="userName"></p>
-      <p><span>密码:</span><input type="password" placeholder="请输入用户密码"  class="userPwd"></p>
-      <p class="tip"></p>
-      <p><button class="btn">登录</button></p>
+    <div class="loginBox">
+      <div class="loginTitle">用户登录</div>
+      <div>
+        <label for="userName">用户名:</label>
+        <input type="txt" placeholder="请输入用户名" id="userName"></div>
+      <div>
+        <label for="userPwd">密码:</label>
+        <input type="password" placeholder="请输入用户密码" id="userPwd"></div>
+      <p id="tip" class="tip_style"></p>
+      <div>
+        <button id="btn" onclick="showResult()">登录</button>
+      </div>
     </div>
-    <script src="../js/login.js">
-	</script>
   </body>
 </html>
