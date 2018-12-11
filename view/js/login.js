@@ -1,21 +1,20 @@
-let userName = document.getElementsByClassName('userName')[0];
-let userPwd = document.getElementsByClassName('userPwd')[0];
-let btn = document.getElementsByClassName('btn')[0];
-let tip = document.getElementsByClassName('tip')[0];
-btn.onclick = function () {
-  tip.style = "display: none";
-  tip.innerHTML = "";
-  if (userName.value == ""|| userPwd.value == "") {
-     userPwd.innerHTML = "";
-     tip.style = "display:block";
-     tip.innerHTML = "账号或密码不能为空，请重新输入"
-  } else if ((userPwd.value != "" && userName.value != "" )&&(userName.value != "123" || userPwd.value != "123")) {
-     userPwd.innerHTML = "";
-     tip.style = "display:block";
-     tip.innerHTML = "账号或密码错误，请重新输入";
-  } else {
-      tip.style = "display:block";
-      tip.innerHTML = "登录成功";
+let userName = document.getElementById('userName');
+let userPwd = document.getElementById('userPwd');
+let tip = document.getElementById('tip');
+function showResult() {
+  if (isLoginSuccess(userName,userPwd)) {
+    showTip("登录成功");
+  }else {
+    emptyUserPwd();
+    showTip("账号或密码错误，请重新输入");
   }
 }
-
+function isLoginSuccess(userName,userPwd) {
+  return userName.value === "123"|| userPwd.value === "123";
+}
+function showTip(message){
+  tip.innerHTML=message;
+}
+function emptyUserPwd() {
+  userPwd.innerHTML = "";
+}
